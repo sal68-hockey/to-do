@@ -1,0 +1,133 @@
+/* General Styling */
+body {
+    background: #f4f4f9; /* Light background to avoid overwhelming the lines */
+    background-image: linear-gradient(to bottom, #ffffff 20px, transparent 20px),
+                      linear-gradient(to bottom, #f3f4f6 20px, transparent 20px); /* Lined paper effect */
+    background-size: 100% 40px; /* Creates 40px high lines */
+    font-family: 'Pacifico', cursive, 'Arial', sans-serif; /* Handwritten-style font */
+    color: #343a40;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+    color: #007bff;
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+p.lead {
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    color: #6c757d;
+    font-size: 1.25rem;
+}
+
+/* Main Card */
+.card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 600px; /* Center card and limit max width */
+}
+
+/* Input Field and Button */
+#taskInput {
+    border: 2px solid #6c757d;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    transition: border-color 0.3s ease;
+    font-family: 'Pacifico', cursive;
+}
+
+#taskInput:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Task List */
+#taskList {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.list-group-item {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-family: 'Pacifico', cursive; /* Handwritten text style */
+    transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #e9ecef;
+}
+
+/* Buttons */
+.btn {
+    font-weight: 600;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Footer */
+footer {
+    color: #6c757d;
+    font-size: 0.875rem;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Clear Button */
+#clearTaskBtn {
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+/* Task completion styling */
+.text-decoration-line-through {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+/* Task Buttons */
+.btn-dark {
+    background-color: #6c757d;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    border-radius: 10px;
+}
+
+.btn-dark:hover {
+    background-color: #5a6268;
+}
+
